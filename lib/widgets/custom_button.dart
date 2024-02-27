@@ -16,7 +16,7 @@ class custom_button extends StatelessWidget {
       this.loading = false,
       required this.onPress,
       this.textColor = globalColors.WhiteColor,
-      this.backgroundColor = globalColors.primaryColor});
+      this.backgroundColor = globalColors.WhiteColor});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class custom_button extends StatelessWidget {
       child: ElevatedButton(
         onPressed: loading ? null : onPress,
         style: ElevatedButton.styleFrom(
-          backgroundColor: backgroundColor,
+          primary: backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
