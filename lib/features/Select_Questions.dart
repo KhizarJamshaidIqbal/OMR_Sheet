@@ -29,7 +29,7 @@ class Select_Questions extends StatelessWidget {
               child: custom_button(
                 textColor: globalColors.primaryColor,
                 backgroundColor: globalColors.WhiteColor,
-                title: 'OMR Sheet Practice',
+                title: 'View Result',
                 onPress: () {},
               ),
             ),
