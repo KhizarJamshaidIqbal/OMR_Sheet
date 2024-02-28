@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:omrsheet_app/constants/app_size.dart';
 import 'package:omrsheet_app/constants/colors.dart';
 import 'package:omrsheet_app/features/Select_Number_of_Questions.dart';
+import 'package:omrsheet_app/features/Testing_Results.dart';
 import 'package:omrsheet_app/widgets/custom_button.dart';
 
 class SelectQuestions extends StatelessWidget {
@@ -39,7 +40,13 @@ class SelectQuestions extends StatelessWidget {
                   textColor: globalColors.primaryColor,
                   backgroundColor: globalColors.WhiteColor,
                   title: 'View Result',
-                  onPress: () {},
+                  onPress: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TestingResults(),
+                        ));
+                  },
                 ),
               ),
             ],

@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
+  final TextAlign textAlign;
   final TextDecoration textDecoration;
   // final String fontFamily;
   final Color color;
@@ -14,6 +15,7 @@ class CustomText extends StatelessWidget {
 
   const CustomText({
     super.key,
+    this.textAlign = TextAlign.justify,
     required this.text,
     required this.color,
     required this.fontsize,
@@ -26,7 +28,7 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textAlign: TextAlign.justify,
+      textAlign: textAlign,
       style: TextStyle(
         color: color,
         fontWeight: FontWeight.normal,

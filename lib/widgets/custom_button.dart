@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, must_be_immutable
+// ignore_for_file: camel_case_types, must_be_immutable, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
@@ -8,6 +8,7 @@ import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
 class custom_button extends StatelessWidget {
   final String title;
   bool loading;
+  final int buttonTextfontsize;
   Color backgroundColor, textColor;
   final VoidCallback onPress;
   custom_button(
@@ -16,7 +17,8 @@ class custom_button extends StatelessWidget {
       this.loading = false,
       required this.onPress,
       this.textColor = globalColors.WhiteColor,
-      this.backgroundColor = globalColors.WhiteColor});
+      this.backgroundColor = globalColors.WhiteColor,
+      this.buttonTextfontsize = 20});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,7 @@ class custom_button extends StatelessWidget {
                 child: CustomText(
                   text: title,
                   color: textColor,
-                  fontsize: 20,
+                  fontsize: buttonTextfontsize,
                   fontWeight: FontWeight.w400,
                 ),
               ),

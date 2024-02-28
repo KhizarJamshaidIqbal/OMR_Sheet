@@ -16,7 +16,7 @@ class SelectNumbrOfQuestions extends StatefulWidget {
 }
 
 class _SelectNumbrOfQuestionsState extends State<SelectNumbrOfQuestions> {
-  List<String> QuestionCounts = ['20', '100', '150', '200'];
+  List<String> QuestionCounts = ['50', '100', '150', '200'];
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -9,4 +9,7 @@ class globalColors {
   static const WhiteColor = Color(0xffFFFFFF);
   static const SuccessColor = Color(0xff198754);
   static const DangerColor = Color(0xffDF0000);
+  static const GreyColor = Color(0xffA0A0A0);
+  static const LightGreyColor = Color(0xffFAFAFA);
+  static const DarkGreyColor = Color(0xff555555);
 }
