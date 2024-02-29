@@ -6,8 +6,8 @@ import 'package:omrsheet_app/constants/colors.dart';
 import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
 import 'package:svg_flutter/svg.dart';
 
-class customStudentCard extends StatelessWidget {
-  const customStudentCard({super.key});
+class CustomStudentCard extends StatelessWidget {
+  const CustomStudentCard({super.key});
 
   @override
   Widget build(BuildContext context) {

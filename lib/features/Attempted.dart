@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -14,7 +15,8 @@ import 'package:omrsheet_app/widgets/custom_button.dart';
 import 'package:svg_flutter/svg.dart';
 
 class Attempted extends StatelessWidget {
-  const Attempted({super.key});
+  final String imagePath;
+  const Attempted({super.key, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +100,11 @@ class Attempted extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Image.asset('assets/images/mcq4.png'),
+                            10.h,
+                            // Image.asset('assets/images/mcqs.jpg'),
+                            ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Image.file(File(imagePath))),
                             20.h,
                             CustomDataTable(
                               columnNames: const ['Q.No', 'Attempted'],
@@ -127,7 +133,7 @@ class Attempted extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                            child: custom_button(
+                            child: Custom_button(
                           title: 'Re-upload',
                           textColor: globalColors.primaryColor,
                           onPress: () {
@@ -140,7 +146,7 @@ class Attempted extends StatelessWidget {
                         )),
                         const SizedBox(width: 20),
                         Expanded(
-                            child: custom_button(
+                            child: Custom_button(
                           title: 'Confirm',
                           backgroundColor: globalColors.primaryColor,
                           onPress: () {

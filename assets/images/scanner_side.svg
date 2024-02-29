@@ -1,27 +1,26 @@
 <svg width="354" height="692" viewBox="0 0 354 692" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="2" y="2" width="350" height="688" rx="8" fill="#2B2A2A" fill-opacity="0.8"/>
-<mask id="path-2-outside-1_151_299" maskUnits="userSpaceOnUse" x="0" y="0" width="66" height="66" fill="black">
+<mask id="path-1-outside-1_209_302" maskUnits="userSpaceOnUse" x="0" y="0" width="66" height="66" fill="black">
 <rect fill="white" width="66" height="66"/>
 <path d="M2 10C2 5.58172 5.58172 2 10 2H66V66H2V10Z"/>
 </mask>
-<path d="M0 10C0 4.47715 4.47715 0 10 0H66V4H10C6.68629 4 4 6.68629 4 10H0ZM66 66H2H66ZM0 66V10C0 4.47715 4.47715 0 10 0V4C6.68629 4 4 6.68629 4 10V66H0ZM66 2V66V2Z" fill="#16E3FF" mask="url(#path-2-outside-1_151_299)"/>
-<mask id="path-4-outside-2_151_299" maskUnits="userSpaceOnUse" x="0" y="626" width="66" height="66" fill="black">
+<path d="M0 10C0 4.47715 4.47715 0 10 0H66V4H10C6.68629 4 4 6.68629 4 10H0ZM66 66H2H66ZM0 66V10C0 4.47715 4.47715 0 10 0V4C6.68629 4 4 6.68629 4 10V66H0ZM66 2V66V2Z" fill="#16E3FF" mask="url(#path-1-outside-1_209_302)"/>
+<mask id="path-3-outside-2_209_302" maskUnits="userSpaceOnUse" x="0" y="626" width="66" height="66" fill="black">
 <rect fill="white" y="626" width="66" height="66"/>
 <path d="M2 682C2 686.418 5.58172 690 10 690H66V626H2V682Z"/>
 </mask>
-<path d="M0 682C0 687.523 4.47715 692 10 692H66V688H10C6.68629 688 4 685.314 4 682H0ZM66 626H2H66ZM0 626V682C0 687.523 4.47715 692 10 692V688C6.68629 688 4 685.314 4 682V626H0ZM66 690V626V690Z" fill="#16E3FF" mask="url(#path-4-outside-2_151_299)"/>
-<mask id="path-6-outside-3_151_299" maskUnits="userSpaceOnUse" x="288" y="626" width="66" height="66" fill="black">
+<path d="M0 682C0 687.523 4.47715 692 10 692H66V688H10C6.68629 688 4 685.314 4 682H0ZM66 626H2H66ZM0 626V682C0 687.523 4.47715 692 10 692V688C6.68629 688 4 685.314 4 682V626H0ZM66 690V626V690Z" fill="#16E3FF" mask="url(#path-3-outside-2_209_302)"/>
+<mask id="path-5-outside-3_209_302" maskUnits="userSpaceOnUse" x="288" y="626" width="66" height="66" fill="black">
 <rect fill="white" x="288" y="626" width="66" height="66"/>
 <path d="M352 682C352 686.418 348.418 690 344 690H288V626H352V682Z"/>
 </mask>
-<path d="M354 682C354 687.523 349.523 692 344 692H288V688H344C347.314 688 350 685.314 350 682H354ZM288 626H352H288ZM354 626V682C354 687.523 349.523 692 344 692V688C347.314 688 350 685.314 350 682V626H354ZM288 690V626V690Z" fill="#16E3FF" mask="url(#path-6-outside-3_151_299)"/>
-<mask id="path-8-outside-4_151_299" maskUnits="userSpaceOnUse" x="288" y="0" width="66" height="66" fill="black">
+<path d="M354 682C354 687.523 349.523 692 344 692H288V688H344C347.314 688 350 685.314 350 682H354ZM288 626H352H288ZM354 626V682C354 687.523 349.523 692 344 692V688C347.314 688 350 685.314 350 682V626H354ZM288 690V626V690Z" fill="#16E3FF" mask="url(#path-5-outside-3_209_302)"/>
+<mask id="path-7-outside-4_209_302" maskUnits="userSpaceOnUse" x="288" y="0" width="66" height="66" fill="black">
 <rect fill="white" x="288" width="66" height="66"/>
 <path d="M352 10C352 5.58172 348.418 2 344 2H288V66H352V10Z"/>
 </mask>
-<path d="M354 10C354 4.47715 349.523 0 344 0H288V4H344C347.314 4 350 6.68629 350 10H354ZM288 66H352H288ZM354 66V10C354 4.47715 349.523 0 344 0V4C347.314 4 350 6.68629 350 10V66H354ZM288 2V66V2Z" fill="#16E3FF" mask="url(#path-8-outside-4_151_299)"/>
-<circle cx="42" cy="100" r="23" fill="white" stroke="#16E3FF" stroke-width="2"/>
-<circle cx="312" cy="100" r="23" fill="white" stroke="#16E3FF" stroke-width="2"/>
-<circle cx="46" cy="602" r="23" fill="white" stroke="#16E3FF" stroke-width="2"/>
-<circle cx="308" cy="602" r="23" fill="white" stroke="#16E3FF" stroke-width="2"/>
+<path d="M354 10C354 4.47715 349.523 0 344 0H288V4H344C347.314 4 350 6.68629 350 10H354ZM288 66H352H288ZM354 66V10C354 4.47715 349.523 0 344 0V4C347.314 4 350 6.68629 350 10V66H354ZM288 2V66V2Z" fill="#16E3FF" mask="url(#path-7-outside-4_209_302)"/>
+<circle cx="42" cy="100" r="23" stroke="#16E3FF" stroke-width="2"/>
+<circle cx="312" cy="100" r="23" stroke="#16E3FF" stroke-width="2"/>
+<circle cx="46" cy="602" r="23" stroke="#16E3FF" stroke-width="2"/>
+<circle cx="308" cy="602" r="23" stroke="#16E3FF" stroke-width="2"/>
 </svg>

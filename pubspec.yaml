@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^6.1.0
   svg_flutter: ^0.0.1
   lottie: ^3.1.0
+  camera:
 
 dev_dependencies:
   flutter_test:

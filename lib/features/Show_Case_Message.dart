@@ -33,42 +33,52 @@ class ShowCaseMessage extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              30.h,
-              // SvgPicture.asset('assets/images/mcq3.svg'),
-              Image.asset('assets/images/Scan_Info2.png'),
-              20.h,
-              const CustomText(
-                text:
-                    'Before capturing photos, please ensure that all elements align within the designated box. This attention to composition enhances the quality of your images and ensures optimal functionality within the app. For further assistance, refer to our guidelines.',
-                color: globalColors.primaryColor,
-                fontsize: 20,
-                textAlign: TextAlign.justify,
-                fontWeight: FontWeight.w400,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  30.h,
+                  // SvgPicture.asset('assets/images/mcq3.svg'),
+                  Image.asset(
+                    'assets/images/mcq4.jpg',
+                    width: double.infinity,
+                  ),
+                  20.h,
+                  const CustomText(
+                    text:
+                        'Before capturing photos, please ensure that all elements align within the designated box. This attention to composition enhances the quality of your images and ensures optimal functionality within the app. For further assistance, refer to our guidelines.',
+                    color: globalColors.primaryColor,
+                    fontsize: 20,
+                    textAlign: TextAlign.justify,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  const Spacer(),
+                  SizedBox(
+                    height: 56,
+                    child: Custom_button(
+                      textColor: globalColors.WhiteColor,
+                      backgroundColor: globalColors.primaryColor,
+                      title: 'Start Scan',
+                      onPress: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Camera(),
+                            ));
+                      },
+                    ),
+                  ),
+                  30.h,
+                ],
               ),
-              const Spacer(),
-              SizedBox(
-                height: 56,
-                child: custom_button(
-                  textColor: globalColors.WhiteColor,
-                  backgroundColor: globalColors.primaryColor,
-                  title: 'Start Scan',
-                  onPress: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Camera(),
-                        ));
-                  },
-                ),
-              ),
-              30.h,
-            ],
+            ),
           ),
         ),
       ),

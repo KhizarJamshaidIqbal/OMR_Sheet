@@ -21,7 +21,7 @@ class SelectQuestions extends StatelessWidget {
             children: [
               SizedBox(
                 height: 56,
-                child: custom_button(
+                child: Custom_button(
                   backgroundColor: globalColors.primaryColor,
                   title: 'OMR Sheet Practice',
                   onPress: () {
@@ -36,7 +36,7 @@ class SelectQuestions extends StatelessWidget {
               10.h,
               SizedBox(
                 height: 56,
-                child: custom_button(
+                child: Custom_button(
                   textColor: globalColors.primaryColor,
                   backgroundColor: globalColors.WhiteColor,
                   title: 'View Result',

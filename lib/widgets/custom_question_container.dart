@@ -6,16 +6,18 @@ import 'package:omrsheet_app/constants/colors.dart';
 import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
 import 'package:svg_flutter/svg.dart';
 
-class custom_question_container extends StatelessWidget {
+class Custom_question_container extends StatelessWidget {
   final String text;
-  const custom_question_container({super.key, required this.text});
+  final bool isSelected;
+  const Custom_question_container(
+      {super.key, required this.text, this.isSelected = false});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20.0),
       decoration: BoxDecoration(
-        color: globalColors.WhiteColor,
+        color: isSelected ? globalColors.primaryColor : globalColors.WhiteColor,
         border: Border.all(color: globalColors.primaryColor),
         borderRadius: BorderRadius.circular(8),
       ),
@@ -23,16 +25,22 @@ class custom_question_container extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15.0),
         child: Row(
           children: [
-            SvgPicture.asset('assets/images/help-circle.svg'),
+            isSelected
+                ? SvgPicture.asset('assets/images/help-circle2.svg')
+                : SvgPicture.asset('assets/images/help-circle.svg'),
             10.w,
             CustomText(
               text: text,
               fontWeight: FontWeight.w400,
-              color: globalColors.primaryColor,
+              color: isSelected
+                  ? globalColors.WhiteColor
+                  : globalColors.primaryColor,
               fontsize: 20,
             ),
             const Spacer(),
-            SvgPicture.asset('assets/images/arrow_right.svg'),
+            isSelected
+                ? SvgPicture.asset('assets/images/arrow_right2.svg')
+                : SvgPicture.asset('assets/images/arrow_right.svg'),
           ],
         ),
       ),

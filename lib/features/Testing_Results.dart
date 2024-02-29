@@ -1,8 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:omrsheet_app/constants/app_size.dart';
 import 'package:omrsheet_app/constants/colors.dart';
 import 'package:omrsheet_app/widgets/CustomAppBar.dart';
-import 'package:omrsheet_app/widgets/customStudentCard.dart';
+import 'package:omrsheet_app/widgets/CustomStudentCard.dart';
 import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -35,15 +37,15 @@ class TestingResults extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               children: [
-                const customStudentCard(),
+                const CustomStudentCard(),
                 5.h,
-                const customStudentCard(),
+                const CustomStudentCard(),
                 5.h,
-                const customStudentCard(),
+                const CustomStudentCard(),
                 5.h,
-                const customStudentCard(),
+                const CustomStudentCard(),
                 5.h,
-                const customStudentCard(),
+                const CustomStudentCard(),
               ],
             ),
           ),

@@ -5,13 +5,13 @@ import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:omrsheet_app/constants/colors.dart';
 import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
 
-class custom_button extends StatelessWidget {
+class Custom_button extends StatelessWidget {
   final String title;
   bool loading;
   final int buttonTextfontsize;
   Color backgroundColor, textColor;
   final VoidCallback onPress;
-  custom_button(
+  Custom_button(
       {super.key,
       required this.title,
       this.loading = false,

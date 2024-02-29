@@ -217,7 +217,7 @@ class Result extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Image.asset('assets/images/mcq4.png'),
+                        Image.asset('assets/images/mcqs.jpg'),
                         20.h,
                         CustomDataTable(
                           columnNames: const ['Q.No', 'Attempted'],

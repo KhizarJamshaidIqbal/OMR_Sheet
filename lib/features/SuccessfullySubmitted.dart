@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -29,7 +29,7 @@ class SuccessfullySubmitted extends StatelessWidget {
             SizedBox(
               height: 35,
               width: 130,
-              child: custom_button(
+              child: Custom_button(
                 title: 'View Result',
                 buttonTextfontsize: 14,
                 backgroundColor: globalColors.primaryColor,

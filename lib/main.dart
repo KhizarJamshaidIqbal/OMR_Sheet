@@ -1,9 +1,16 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, deprecated_member_use
 
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:omrsheet_app/features/Select_Questions.dart';
 
-void main() {
+List<CameraDescription>? cameras;
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //load camera
+  cameras = await availableCameras();
+
   runApp(const MyApp());
 }
 
