@@ -8,6 +8,8 @@ class CustomText extends StatelessWidget {
   final String text;
   final TextAlign textAlign;
   final TextDecoration textDecoration;
+  final TextOverflow overflow;
+  final bool softWrap;
   // final String fontFamily;
   final Color color;
   final int fontsize;
@@ -22,12 +24,16 @@ class CustomText extends StatelessWidget {
     this.fontWeight = FontWeight.normal,
     // this.fontFamily = 'Literata-Regular',
     this.textDecoration = TextDecoration.none,
+    this.overflow = TextOverflow.clip,
+    this.softWrap = true,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
+      overflow: overflow,
+      softWrap: softWrap,
       textAlign: textAlign,
       style: TextStyle(
         color: color,

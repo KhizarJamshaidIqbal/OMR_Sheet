@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_constructors
 
 import 'dart:io';
 import 'dart:math';
@@ -44,67 +44,86 @@ class Attempted extends StatelessWidget {
             children: [
               SingleChildScrollView(
                   child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 30.0),
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            30.h,
                             SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
                               child: SizedBox(
-                                width: double.infinity,
-                                child: Row(
+                                width: MediaQuery.of(context).size.width,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    20.w,
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
+                                    Row(
+                                      children: const [
+                                        Expanded(
+                                          child: CustomText(
                                             text: 'Attempted Questions',
+                                            overflow: TextOverflow.visible,
+                                            softWrap: false,
                                             color: globalColors.BlackColor,
-                                            fontsize: 20,
+                                            fontsize: 16,
                                             fontWeight: FontWeight.w400,
                                           ),
-                                          10.h,
-                                          const CustomText(
+                                        ),
+                                        Spacer(),
+                                        Expanded(
+                                          child: CustomText(
+                                            text: 'Attempted Questions',
+                                            overflow: TextOverflow.visible,
+                                            softWrap: false,
+                                            color: globalColors.BlackColor,
+                                            fontsize: 16,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                        Spacer(),
+                                      ],
+                                    ),
+                                    10.h,
+                                    Row(
+                                      children: const [
+                                        Spacer(),
+                                        Expanded(
+                                          child: CustomText(
                                             text: '88',
                                             color: globalColors.SuccessColor,
-                                            fontsize: 40,
+                                            fontsize: 30,
                                             fontWeight: FontWeight.w400,
                                           ),
-                                        ],
-                                      ),
-                                    ),
-                                    const Spacer(),
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
-                                            text: 'Total no. of question:',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 20,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                          10.h,
-                                          const CustomText(
+                                        ),
+                                        Spacer(),
+                                        Spacer(),
+                                        Expanded(
+                                          child: CustomText(
                                             text: '100',
                                             color: globalColors.BlackColor,
-                                            fontsize: 40,
+                                            fontsize: 30,
                                             fontWeight: FontWeight.w400,
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                        Spacer(),
+                                      ],
                                     ),
-                                    20.w,
                                   ],
                                 ),
                               ),
                             ),
-                            10.h,
+                            20.h,
                             // Image.asset('assets/images/mcqs.jpg'),
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(8),
-                                child: Image.file(File(imagePath))),
+                            Center(
+                              child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Image.file(
+                                    File(imagePath),
+                                    width: double.infinity,
+                                    fit: BoxFit.contain,
+                                  )),
+                            ),
                             20.h,
                             CustomDataTable(
                               columnNames: const ['Q.No', 'Attempted'],

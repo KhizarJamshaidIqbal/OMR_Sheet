@@ -34,17 +34,15 @@ class ShowCaseMessage extends StatelessWidget {
           ),
         ),
         body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
           child: SizedBox(
-            width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  30.h,
+                  // 30.h,
                   // SvgPicture.asset('assets/images/mcq3.svg'),
                   Image.asset(
                     'assets/images/mcq4.jpg',
@@ -75,7 +73,8 @@ class ShowCaseMessage extends StatelessWidget {
                       },
                     ),
                   ),
-                  30.h,
+                  // 80.h,
+                  const Spacer()
                 ],
               ),
             ),

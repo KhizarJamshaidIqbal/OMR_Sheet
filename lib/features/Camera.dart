@@ -56,6 +56,7 @@ class _CameraState extends State<Camera> {
   void dispose() {
     super.dispose();
     cameraController.dispose();
+    cameraController.setFlashMode(FlashMode.off);
     // cameraController.stopImageStream();
   }
 
@@ -125,6 +126,8 @@ class _CameraState extends State<Camera> {
                           onTap: () async {
                             XFile? image = await cameraController.takePicture();
                             if (image != null) {
+                              // Set flash mode to off
+                              cameraController.setFlashMode(FlashMode.off);
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

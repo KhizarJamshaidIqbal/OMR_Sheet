@@ -35,7 +35,7 @@ class CustomDataTable extends StatelessWidget {
             .map(
               (columnName) => DataColumn(
                 label: SizedBox(
-                  width: MediaQuery.of(context).size.width * .35,
+                  width: MediaQuery.of(context).size.width * .361,
                   child: Center(
                     child: Text(
                       columnName,

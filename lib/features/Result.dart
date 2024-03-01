@@ -117,105 +117,90 @@ class Result extends StatelessWidget {
                           ],
                         ),
                         20.h,
-                        SingleChildScrollView(
-                          child: SizedBox(
-                            width: double.infinity,
-                            child: Column(
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Row(
-                                  children: [
-                                    20.w,
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
-                                            text: 'Attempted Questions',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 20,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                          10.h,
-                                          const CustomText(
-                                            text: '88',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 40,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const Spacer(),
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
-                                            text: 'Total no. of question',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 20,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                          10.h,
-                                          const CustomText(
-                                            text: '100',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 40,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    20.w,
-                                  ],
+                                const CustomText(
+                                  text: 'Attempted Questions',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 16,
+                                  fontWeight: FontWeight.w400,
                                 ),
-                                20.h,
-                                Row(
-                                  children: [
-                                    20.w,
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
-                                            text: 'Marks Obtained',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 20,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                          10.h,
-                                          const CustomText(
-                                            text: '68',
-                                            color: globalColors.SuccessColor,
-                                            fontsize: 40,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const Spacer(),
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          const CustomText(
-                                            text: 'Correct Answers',
-                                            color: globalColors.BlackColor,
-                                            fontsize: 20,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                          10.h,
-                                          const CustomText(
-                                            text: '72',
-                                            color: globalColors.SuccessColor,
-                                            fontsize: 40,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    20.w,
-                                  ],
+                                10.h,
+                                const CustomText(
+                                  text: '88',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 30,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                10.h,
+                                const CustomText(
+                                  text: 'Marks Obtained',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                10.h,
+                                const CustomText(
+                                  text: '68',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.SuccessColor,
+                                  fontsize: 30,
+                                  fontWeight: FontWeight.w400,
                                 ),
                               ],
                             ),
-                          ),
+                            const Spacer(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                const CustomText(
+                                  text: 'Total no. of question',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                10.h,
+                                const CustomText(
+                                  text: '100',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 30,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                10.h,
+                                const CustomText(
+                                  text: 'Correct Answers',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.BlackColor,
+                                  fontsize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                10.h,
+                                const CustomText(
+                                  text: '72',
+                                  overflow: TextOverflow.visible,
+                                  softWrap: false,
+                                  color: globalColors.SuccessColor,
+                                  fontsize: 30,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                         Image.asset('assets/images/mcqs.jpg'),
                         20.h,

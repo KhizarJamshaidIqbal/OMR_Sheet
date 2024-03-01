@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:omrsheet_app/constants/app_size.dart';
 import 'package:omrsheet_app/constants/colors.dart';
+import 'package:omrsheet_app/widgets/CustomAlert.dart';
 import 'package:omrsheet_app/widgets/CustomAppBar.dart';
 import 'package:omrsheet_app/widgets/CustomTextField.dart';
 import 'package:omrsheet_app/widgets/custom_Text_Widget.dart';
@@ -66,6 +67,9 @@ class ReportProblem extends StatelessWidget {
                   backgroundColor: globalColors.primaryColor,
                   title: 'Submit',
                   onPress: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => CustomAlertDialog());
                     // Navigator.push(
                     //     context,
                     //     MaterialPageRoute(
