@@ -72,6 +72,7 @@ class _CameraState extends State<Camera> {
               width: 22,
             ),
             onPressed: () {
+              cameraController.dispose();
               Navigator.pop(context);
             },
           ),
@@ -125,7 +126,7 @@ class _CameraState extends State<Camera> {
                       child: InkWell(
                           onTap: () async {
                             XFile? image = await cameraController.takePicture();
-                            if (image != null) {
+                            if (image != null || image == null) {
                               // Set flash mode to off
                               cameraController.setFlashMode(FlashMode.off);
                               Navigator.push(

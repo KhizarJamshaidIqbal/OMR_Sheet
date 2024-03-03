@@ -73,7 +73,7 @@ class Attempted extends StatelessWidget {
                                         Spacer(),
                                         Expanded(
                                           child: CustomText(
-                                            text: 'Attempted Questions',
+                                            text: 'Total no. of question',
                                             overflow: TextOverflow.visible,
                                             softWrap: false,
                                             color: globalColors.BlackColor,

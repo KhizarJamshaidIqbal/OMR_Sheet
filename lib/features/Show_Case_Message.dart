@@ -73,7 +73,7 @@ class ShowCaseMessage extends StatelessWidget {
                       },
                     ),
                   ),
-                  // 80.h,
+                  30.h,
                   const Spacer()
                 ],
               ),
